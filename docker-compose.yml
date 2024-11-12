@@ -1,4 +1,4 @@
-
+d
 services:
   backend:
     build:
@@ -13,7 +13,7 @@ services:
 
   frontend:
     build:
-      context: ./front
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "80:80"  
