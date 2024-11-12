@@ -1,15 +1,6 @@
 d
 services:
-  backend:
-    build:
-      context: ./back
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"  
-    environment:
-      - ENV=production
-    networks:
-      - app_network
+
 
   frontend:
     build:
