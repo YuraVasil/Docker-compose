@@ -1,16 +1,12 @@
-
+version: '3'
 services:
-
-
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:80" 
-    networks:
-      - app_network
-
-networks:
-  app_network:
-    driver: bridge
+      - "8080:80"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
