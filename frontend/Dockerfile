@@ -1,13 +1,11 @@
 FROM node:18 AS build
 
-WORKDIR /app//
-
-COPY package*.json /app//
+WORKDIR /usr/app
+COPY ./ /usr/app
 
 
 RUN npm install
 
-COPY . .
 
 
 RUN npm run build
