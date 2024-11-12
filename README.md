@@ -1,2 +1,2 @@
-# Docker-compose
+# Docker compose
 Docker compose
