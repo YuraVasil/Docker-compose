@@ -8,5 +8,4 @@ services:
       - "3000:80"
     volumes:
       - ./frontend:/app
-    environment:
-      - NODE_ENV=development
+
