@@ -9,6 +9,6 @@ services:
       
     volumes:
       - ./frontend:/app
-    environment:
-      - NODE_ENV=development
+
+
 
